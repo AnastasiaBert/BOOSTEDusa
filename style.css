@@ -1,0 +1,2319 @@
+html, body {
+  height: 100%;
+}
+  
+body {
+  display: flex;
+  flex-direction: column; 
+}
+  
+.header {
+  min-height: 100px;
+  background-color: #fff;
+}
+
+input#navi-toggle.checkbox {
+  display: none;
+}
+
+.black_line {
+  background: #000;
+}
+
+.black-line_text {
+  height: 29px;
+  margin: 0;
+  color: #fbfbfb;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+.nav {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.link {
+  display: inline-block;    
+  margin: 0px 15px; 
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.link:hover {
+color: #FF4A32;
+transition: 0.8s;
+text-decoration: none;
+}
+
+.header_icon {
+  margin-right: 30px; 
+  margin-left: 11px; 
+  margin-top: 20px;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+/*Welcome page*/
+
+.welcome-page {
+  background: url('images/background.png') no-repeat center center/cover;
+  min-height: 810px;
+  padding: 40px;
+}
+
+.box {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.box-in_stock {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 510px;
+}
+
+.welcome-page_title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  margin-top: 35px;
+  padding-top: 60px;
+}
+
+.welcome-page_subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.box_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_first, .btn_second {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  background-color: #FF4A32;
+  border-radius: 35px;
+  font-size: 14px;
+  min-width: 201px;
+  max-height: 33px;
+  text-align: center;
+  margin: 15px;
+}
+
+.btn_first:hover {
+  background-color: #fff;
+  color: #FF4A32;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+.btn_second:hover {
+  background-color: #fff;
+  color: #FF4A32;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+/* Logo carousel */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 150px;
+}
+
+.carousel__list {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel__item:hover {
+  transform: scale(1.1);
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Second slider */
+
+
+.row {
+background-color: #010101;
+padding: 2% 0;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Boosted boards and revs */
+
+.boosted-boards_and_revs {
+  display: flex;
+  text-align: center;
+}
+
+.boosted-boards_and_revs_title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.text_box {
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.boosted-boards_and_revs_text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.shop-box {
+  max-width: 1170px;
+}
+
+.shop-boosted-board-and-revs {
+  display: flex;
+}
+  
+.boards-img-wrap {
+  background-image: url(images/boosted-boards.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  height: 580px;
+  margin: 0 15px;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.revs-img-wrap {
+  background-image: url(images/boosted-revs.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  height: 580px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.in-stock {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+
+.in-stock:hover {
+  color: #989898;
+}
+
+.shop-boosted-board_title, .shop-boosted-revs_title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 260px;
+}
+
+.shop-boosted-board_subtitle, .shop-boosted-revs_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+
+/*Electric skateboards*/
+
+.electric_skateboards {
+  background: url(images/electric-skating.jpg) no-repeat center center/cover;
+  min-height: 810px;
+  padding: 40px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.electric_skateboards_pretitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.electric_skateboards_title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 51px;
+  text-align: center;
+  
+}
+
+.electric_skateboards_subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.box_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_skateboards {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  background-color: #FF4A32;
+  border-radius: 35px;
+  font-size: 14px;
+  min-width: 201px;
+  max-height: 33px;
+  text-align: center;
+  margin: 15px;
+}
+
+.btn_skateboards:hover {
+  background-color: #fff;
+  color: #FF4A32;
+  transition: 0.8s;
+}
+
+
+/*Boosted rev*/
+
+.boosted-rev-content {
+  display: flex;
+  justify-content: center;
+}
+
+.boosted-rev-text_wrap {
+  padding: 40px;
+}
+
+.boosted-rev-content {
+  flex-direction: row;
+}
+
+.boosted-rev_title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: left;
+}
+
+.boosted-rev_text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.box_btn {
+  display: flex;
+}
+
+.btn-boosted_rev {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  background-color: #FF4A32;
+  border-radius: 35px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.btn-boosted_rev:hover {
+  background-color: #fff;
+  color: #FF4A32;
+  transition: 0.8s;
+}
+
+.boosted-revs_img {
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}  
+
+/* Shop boosted images */
+
+.shop-boosted-images_content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.img-wrap-shop_first {
+  background: url(images/boosted-board-img-first.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.img-wrap-shop_second {
+  background: url(images/boosted-board-img-second.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.img-wrap-shop_third {
+  background: url(images/boosted-board-img-third.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.shop-boosted_images_title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.shop-boosted_images_subtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+
+/* Shop boosted videos*/
+
+.box-videos {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-bottom: 20px;
+}
+
+/* PRODUCTS */
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.product-container {
+  padding: 0 6vw;
+  display: flex;
+  overflow-x: auto;         /* important */
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 460px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.8s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #FF4A32;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.5;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+
+/* accessories */
+
+.accessories-content {
+  display: flex;
+}
+
+.accessories-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.accessoires_hr {
+  height: 2px;
+  width: 70px;
+  background-color: #cfcfcf;
+  color: #cfcfcf;
+}
+
+.accessories_name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  justify-content: center;
+  color: #FF4A32;
+  text-decoration: none;
+}
+
+.accessories_price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+ .white-box {
+  height: 66px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
+  border-radius: 0px;
+}
+
+/* Advantages */
+
+.advantages {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-boosted-products {
+  background-color: #000;
+  margin-top: 30px;
+}
+
+.advantages-boosted-products_item {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.advantages-boosted-products_text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 20px 0px 20px;
+  max-width: 170px;
+}
+
+.advantages-wrap {
+  text-align: center;
+  padding: 20px;
+}
+
+/* About boosted */
+
+.about-boosted, .about-boosted-content {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.about-boosted_box {
+  max-width: 1440px;
+}
+
+.about-boosted-content_wrap {
+  flex-direction: column;
+  margin: 40px 40px 40px 30px;
+}
+
+.about-boosted-text_wrap {
+  flex-direction: column;
+  margin-left: 250px;
+  max-width: 367px;
+}
+
+.about-boosted_source-title {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left; 
+}
+
+.about-boosted_source-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.about-boosted_content-title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.about-boosted_content_text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.about-boosted_content_subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.logo-img_wrap {
+  min-width: 450px;
+}
+
+.logo_img {
+  margin-left: 10px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 160px;
+  height: auto;
+}  
+
+/* Footer*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.box-footer {
+  max-width: 1440px;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.footer-icons {
+  margin-left: 1000px;
+  margin-bottom: 30px;
+}
+
+.footer-content-text:nth-child(2) {
+  color: #FF4A32;
+}
+
+
+.footer-content-text:nth-child(4) {
+  color: #FF4A32;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .header {
+    width: auto;
+  }
+  
+  .footer {
+    width: auto;
+  }
+
+  /* Header */
+
+
+  /* Name */
+
+  .name {
+    height: 58px;
+    padding-bottom: 15px;
+  }
+
+  /* Boosted boards and revs */
+
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 260px;
+  }
+  
+  
+  /* About boosted */
+  
+  .about-boosted_box {
+    max-width: 1300px;
+  }
+  
+  .about-boosted-content_wrap {
+    flex-direction: column;
+    margin: 40px 40px 40px 30px;
+    min-width: 150px;
+  }
+  
+  .about-boosted-text_wrap {
+    flex-direction: column;
+    margin-left: 150px;
+    padding: 30px;
+    max-width: 467px;
+  }
+  
+  .logo-img_wrap {
+    min-width: 450px;
+  }
+  
+  .logo_img {
+    margin-left: 70px;
+  }  
+
+  /* Footer */
+
+  .footer-icons {
+    margin-left: 800px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+
+  /* Header */
+
+  .link { 
+    margin: 0 10px; 
+    font-size: 12px;
+}
+
+   /*Welcome page*/
+
+   .name {
+    height: 62px;
+    padding-bottom: 5px;
+  }
+
+  .name-item {
+    max-width: 250px;
+  }
+
+  /*Boosted boards and revs*/
+  
+  .boards-img-wrap {
+    background-image: url(images/boosted-boards.jpg);
+    background-repeat: no-repeat;
+    max-width: 410px;
+    max-height: 410px;
+    background-size: 100% 100%;
+  }
+  
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 410px;
+    max-height: 410px;
+    background-size: 100% 100%;
+    
+  }
+  
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 180px;
+  }
+
+  /*Boosted rev*/
+  
+  .boosted-rev-text_wrap {
+    padding: 20px 30px;
+  }
+
+  .boosted-rev {
+    max-height: 460px;
+  }
+  
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 27px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  
+  .boosted-revs_img {
+    max-width: 340px;
+    max-height: 340px;
+    background-size: 100% 100%;
+  }  
+   
+  /* About boosted */
+  
+  .about-boosted_box {
+    max-width: 1210px;
+  }
+  
+  .about-boosted-text_wrap {
+    margin-left: 70px;
+    max-width: 567px;
+  }
+
+  .about-boosted_content-title {
+    margin-bottom: 20px;
+  }
+
+  .logo-img_wrap {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .header {
+    width: auto;
+  }
+  
+  .footer {
+    width: auto;
+  }
+   
+  /* Header */
+
+  .link { 
+    margin: 0px 10px; 
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  /*Welcome page*/
+  .name {
+    height: 57px;
+    padding-bottom: 5px;
+  }
+/*
+  .name-item {
+    max-width: 230px;
+  }
+
+  /*Boosted boards and revs*/
+    
+  .boards-img-wrap {
+    background-image: url(images/boosted-boards.jpg);
+    background-repeat: no-repeat;
+    max-width: 410px;
+    max-height: 410px;
+    background-size: 100% 100%;
+  }
+  
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 410px;
+    max-height: 410px;
+    background-size: 100% 100%;
+  }
+  
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 180px;
+  }
+
+  /*Boosted rev*/
+  
+  .boosted-rev {
+    max-height: 460px;
+  }
+
+  .boosted-rev-text_wrap {
+    padding: 10px 20px;
+  }
+
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 27px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  
+  .boosted-revs_img {
+    max-width: 320px;
+    max-height: 320px;
+    background-size: 100% 100%;
+   }  
+  
+  /* Shop boosted images */
+  
+  .shop-boosted-images_content {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .img-wrap-shop_first {
+    padding-bottom: 10px;
+  }
+
+  .img-wrap-shop_second {
+    padding-bottom: 10px;
+    }
+
+  /* About boosted */
+    
+  .about-boosted_box {
+    max-width: 1100px;
+  }
+  
+  .about-boosted-text_wrap {
+    margin-left: 50px;
+  }
+  
+  .logo-img_wrap {
+    min-width: 350px;
+  }
+
+  /* Footer*/
+
+  .footer-icons {
+    margin-left: 600px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  /* Header */
+
+  .link {
+    font-size: 10px;
+  }
+
+  /*Welcome page*/
+  .name {
+    height: 52px;
+    padding-bottom: 5px;
+  }
+
+  .name-item {
+    max-width: 210px;
+  }
+
+  /*Boosted rev*/
+  
+  .boosted-rev {
+    max-height: 460px;
+  }
+
+  .boosted-rev-text_wrap {
+    padding: 0px 20px;
+  }
+
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 20px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  
+  .boosted-revs_img {
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 100% 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }  
+
+
+
+/*about-boosted_content*/
+
+.about-boosted {
+  display: flex;
+  max-height: 329px;
+  background-color: #f7f7f7;
+}
+
+.about-boosted_wrap {
+  flex-direction: column;
+}
+  
+/* About boosted*/
+
+.about-boosted, .about-boosted-content {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+}
+
+.about-boosted_content-title {
+  font-size: 40px;
+  margin-left: 0px;
+}
+
+.about-boosted_content_text {
+  margin-left: 0px;
+}
+
+.about-boosted_content_subtitle {
+  margin-left: 0px;
+}
+
+/* Advantages */
+
+.advantages {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+  .advantages-boosted-products_text {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  
+  .header { 
+    width: auto;
+  }
+    
+  .footer {
+    width: auto;
+  }
+  
+  /* hamburger */
+  .checkbox {
+    display: none;
+  }
+  
+  .button {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5vh; 
+    right: 5vw; 
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgb(53, 53, 53);
+    text-align: center; 
+    cursor: pointer;
+  }
+  
+  .background {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5vh; 
+    right: 5.5vw; 
+    background-image: radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+    z-index: 1000;
+  
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+  }
+  
+  .list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .item {
+    margin: 1rem;
+    font-size: 28px;
+  }
+  
+  .link:link,
+  .link:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 220%;
+    transition: all 0.4s;
+  }
+  
+  .link:hover,
+  .link:active {
+    color: rgb(132, 132, 132);
+    cursor: pointer;
+  }
+  
+  /* functionality */
+  .checkbox:checked ~ .background {
+    transform: scale(80);
+  }
+  .checkbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+  }
+  
+  /*  */
+  /* styling hamb ICON */
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon,
+  .icon::before,
+  .icon::after {
+    width: 1.9rem;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.4s;
+  }
+  
+  .icon::before {
+    top: -0.8rem;
+  }
+  .icon::after {
+    top: 0.8rem;
+  }
+  
+  .button:hover icon:before {
+    top: -1rem;
+  }
+  .button:hover icon::after {
+    top: 1rem;
+  }
+  
+  .checkbox:checked + .button .icon {
+    background-color: transparent;
+  }
+  
+  .checkbox:checked + .button .icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .checkbox:checked + .button .icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  /* Header */
+
+  .header_icon {
+    margin-right: 145px; 
+    margin-top: 22px;
+  }
+
+  /* Welcome page*/
+
+  .name-item {
+    max-width: 200px;
+  }
+
+  .name {
+    height: 53px;
+    padding-bottom: 5px;
+  }
+
+  /*Boosted boards and revs*/
+  
+  .boards-img-wrap {
+    background-image: url(images/boosted-boards.jpg);
+    background-repeat: no-repeat;
+    max-width: 360px;
+    max-height: 360px;
+    background-size: 100% 100%;
+  }
+  
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 360px;
+    max-height: 360px;
+    background-size: 100% 100%;
+    
+  }
+
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 160px;
+  }
+
+  /*Boosted rev*/
+    
+  .boosted-rev {
+    max-height: 460px;
+  }
+  
+  .boosted-rev-text_wrap {
+    padding: 0px 20px;
+  }
+  
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 10px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  
+  .boosted-revs_img {
+    max-width: 280px;
+    max-height: 280px;
+    background-size: 100% 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }  
+
+  .btn-boosted_rev {
+    font-size: 14px;
+  }
+  
+  .btn_boosted_rev:hover {
+    font-size: 14px;
+  }
+
+/* Advantages */
+
+.advantages-boosted-products {
+  background-color: #000;
+  margin-top: 30px;
+}
+
+.advantages-boosted-products_item {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.advantages-boosted-products_text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 0px 20px 0px 20px;
+}
+
+.advantages-wrap {
+  text-align: center;
+  padding: 20px;
+}
+
+  /* About boosted */
+    
+  .about-boosted_box {
+    max-width: 910px;
+  }
+  
+  .about-boosted-text_wrap {
+    margin-left: 20px;
+    max-width: 330px;
+  }
+  
+  .logo-img_wrap {
+    min-width: 300px;
+  }
+
+  /* Footer*/
+
+  .footer-icons {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .header_logo {
+    margin-top: 12px;
+    margin-left: 30px;
+  }
+
+  .header_icon {
+    margin-right: 150px; 
+    margin-top: 22px;
+  }
+  
+  /* Black line text */
+
+  .black-line_text {
+    font-size: 16px;
+  }
+
+  /*Welcome page*/
+
+  .welcome-page_subtitle {
+    font-size: 20px;
+  }
+
+  .name {
+    height: 48px;
+  }
+
+  .name-item {
+    max-width: 170px;
+  }
+
+  /* Boosted boards and revs */
+
+  .boosted-board-and-revs_text {
+    font-size: 18px;
+  }
+
+   /*Boosted rev*/
+    
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 7px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 18px;
+  }
+  
+  .boosted-revs_img {
+    margin-top: 30px;
+    max-width: 250px;
+    max-height: 250px;
+    background-size: 100% 100%;
+  }  
+
+   /* Electric skateboards*/
+
+   .electric_skateboards_subtitle {
+    font-size: 20px;
+  }  
+
+    /* About boosted */
+    
+    .about-boosted_box {
+      max-width: 850px;
+    }
+    
+    .about-boosted-text_wrap {
+      margin-left: 10px;
+      max-width: 320px;
+    }
+    
+    .about-boosted_content-title {
+      font-size: 38px;
+      margin-top: 20px;
+    }
+
+    .logo-img_wrap {
+      min-width: 250px;
+    }  
+
+    .logo_img {
+      margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+  .header { 
+    width: auto;
+  }
+    
+  .footer {
+    width: auto;
+  }
+
+  /* Header */
+
+  /*Welcome page*/
+  
+  .name-item {
+    max-width: 120px;
+  }
+  
+  .name {
+    height: 35px;
+  }
+  
+  /* Boosted boards and revs */
+  
+  .shop-boosted-board-and-revs {
+    flex-direction: column;
+  }
+  
+  .boards-img-wrap {
+    margin: 20px auto 40px;
+  }
+  
+  .text_box {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  
+  .boards-img-wrap {
+    background-image: url(images/boosted-boards.jpg);
+    background-repeat: no-repeat;
+    max-width: 480px;
+    max-height: 480px;
+    background-size: 100% 100%;
+  }
+  
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 480px;
+    max-height: 480px;
+    background-size: 100% 100%;
+  }
+  
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 180px;
+    font-size: 34px;
+    padding-bottom: 21px;
+  }
+  
+  .in-stock {
+    font-size: 26px;
+  }
+  
+  /*Boosted rev*/
+  
+  .boosted-rev {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    text-align: center;
+  }
+  
+  .boosted-rev-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .boosted-rev_title {
+    font-size: 32px;
+    line-height: 7px;
+    text-align: center;
+  }
+  
+  .boosted-rev-text_wrap {
+    padding: 0px 40px;
+  }
+  
+  .boosted-rev_text {
+    font-size: 22px;
+    line-height: 27px;
+    margin-right: 0px;
+  }
+  
+  .boosted-revs_img {
+    margin-top: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 100% 100%;
+  }  
+  
+  /* Shop boosted images */
+  
+  .shop-boosted-images_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 30px;
+  }
+  
+  .shop-boosted_images_title {
+    font-size: 34px;
+    margin-top: 180px;
+  }
+  
+  .shop-boosted_images_subtitle {
+    font-size: 26px;
+  }
+  
+  /* shop boosted videos*/
+
+  .box-videos {
+    text-align: center;
+  }
+
+  /* Advantages */
+  
+  .advantages {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .advantages-boosted-products {
+    background-color: #000;
+    margin-top: 30px;
+  }
+  
+  .advantages-boosted-products_item {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  
+  .advantages-boosted-products_text {
+    font-size: 22px;
+    line-height: 21px;
+    padding: 0px 20px 0px 20px;
+  }
+  
+  .advantages-wrap {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .advantages-wrap :nth-child(1) {
+    padding-right: 30px;
+  }
+  
+  .advantages-wrap :nth-child(4) {
+    padding-right: 30px;
+  }
+
+
+  /* About boosted */
+
+  .about-boosted {
+    padding-bottom: 30px;
+  }
+  
+  .about-boosted-text_wrap {
+    display: none;
+  }
+
+  .about-boosted_source-title {
+    font-size: 28px;
+  }
+
+  .about-boosted_source-item {
+    font-size: 24px;
+    line-height: 18px;
+  }
+
+  .logo-img_wrap {
+    min-width: 200px;
+  }  
+
+  .logo_img {
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  /* Footer*/
+  .footer-icons {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  /* Header */
+
+  .header_menu {
+    display: none;
+  }
+
+  .header_logo {
+    margin-top: 12px;
+    margin-left: 30px;
+  }
+
+  .header_icon {
+    margin-right: 120px; 
+  }
+
+  /* Welcome page */
+
+  .welcome-page {
+    background: url('images/background.png') no-repeat bottom center/cover;
+    min-height: 700px;
+  }
+
+  .welcome-page_title {
+    font-size: 28px;
+    margin-top: 25px;
+    padding-top: 50px;
+  }
+
+  .welcome-page_subtitle {
+    font-size: 20px;
+  }
+
+  .btn_first, .btn_second {
+    font-size: 13px;
+    min-width: 100px;
+  }
+  
+  .name {
+    height: 27px;
+  }
+
+  .name-item {
+    max-width: 77px;
+  }
+
+  /* Boosted boards and revs */ 
+
+  .shop-boosted-board-and-revs {
+    flex-direction: column;
+  }
+
+  .boosted-boards_and_revs_title {
+    font-size: 28px;
+  }
+
+  .boosted-boards_and_revs_text {
+    font-size: 10px;
+  }
+
+  .text_box {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  
+   .boards-img-wrap {
+     margin: 20px auto 40px;
+   }
+  
+   .boards-img-wrap {
+     background-image: url(images/boosted-boards.jpg);
+     background-repeat: no-repeat;
+     max-width: 320px;
+     max-height: 320px;
+     background-size: 100% 100%;
+   }
+   
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 320px;
+    max-height: 320px;
+    background-size: 100% 100%;
+   }  
+
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 145px;
+  }  
+
+  /* Electric skateboards */
+
+  .electric_skateboards {
+    background: url(images/electric-skating.jpg) no-repeat left center/cover;
+    min-height: 700px;
+  }
+
+  /*Boosted rev*/
+  
+  .boosted-revs_img {
+    margin: 5px 0px;
+    max-width: 340px;
+    max-height: 340px;
+    background-size: 100% 100%;
+  }  
+
+  .btn-boosted_rev {
+    font-size: 18px;
+    padding: 12px 12px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 120px;
+  }
+
+  /* Shop boosted images */
+ 
+  .img-wrap-shop_first {
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  
+  .img-wrap-shop_second {
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  
+  .img-wrap-shop_third {
+    width: 430px;
+    height: 430px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .shop-boosted_images_title {
+    font-size: 32px;
+    margin-top: 180px;
+  }
+  
+  .shop-boosted_images_subtitle {
+    font-size: 26px;
+    margin-top: 5px;
+  }
+  
+  /* Shop boosted videos*/
+
+  .video-boosted {
+    width: 400px;
+    height: auto;
+  }
+    
+  /* About boosted */
+
+  .about-boosted {
+    padding-top: 40px;
+  }
+  
+    
+  .about-boosted-text_wrap {
+    display: none;
+  }
+  
+  .about-boosted-content_wrap {
+    margin: 0px;
+  }
+  
+  .about-boosted_source-title {
+    text-align: center;
+  }
+
+  .about-boosted_source-item {
+    text-align: center;
+  }
+
+  .logo-img_wrap {
+    display: none;
+  }
+
+  /* Advantages */
+  
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .advantages-wrap {
+    margin: 0 auto;
+    padding: 5px 0px;
+  }
+  
+  .advantages-wrap :nth-child(1) {
+    padding-right: 0px;
+    padding-top: 15px;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    text-align: center;
+    padding: 20px 30px 0px;
+  }
+
+  .footer-content-text {
+    font-size: 26px;
+  }
+
+  .footer-icons {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* Welcome page */
+
+  .btn_first {
+    padding-top: 20px;
+  }
+
+  /* Shop boosted images */
+  
+  .img-wrap-shop_first {
+    background: url(images/boosted-board-img-first.jpg) no-repeat right center/cover;
+    width: 310px;
+    height: 310px;
+  }
+  
+  .img-wrap-shop_second {
+    background: url(images/boosted-board-img-second.jpg) no-repeat right center/cover;
+    width: 310px;
+    height: 310px;
+  }
+  
+  .img-wrap-shop_third {
+    background: url(images/boosted-board-img-third.jpg) no-repeat right center/cover;
+    width: 310px;
+    height: 310px;
+  }
+  
+  .shop-boosted_images_title {
+    margin-top: 150px;
+  }
+
+  /* Shop boosted videos*/
+
+  .box_videos {
+    margin-top: 10px;
+  }
+
+  .video-boosted {
+    width: 270px;
+    height: auto;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  
+  .header {
+    width: auto;
+  }
+
+  .footer {
+    width: auto;
+  }
+
+  /* Header */
+ 
+  .header {
+    min-height: 120px;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .black_line {
+    min-height: 50px;
+  }
+
+  .header_logo {
+    margin-top: 18px;
+  }
+
+  /* Welcome page */
+
+  .welcome-page {
+    background: url('images/background.png') no-repeat bottom center/cover;
+    min-height: 600px;
+  }
+
+  .welcome-page_title {
+    font-size: 28px;
+    margin-top: 5px;
+    padding-top: 30px;
+    line-height: 28px;
+  }
+
+  .welcome-page_subtitle {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .box_btn {
+    flex-direction: column;
+  }
+
+  .btn_first, .btn_second {
+    font-size: 16px;
+    max-width: 120px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  
+  .btn_second {
+    max-width: 160px;
+  }
+  
+/*
+  .name {
+    height: 170px;
+  }
+
+  .name-item {
+    margin-top: 12px;
+    min-width: 160px;
+  }
+
+  /* Electric skateboards*/
+
+  .electric_skateboards_title {
+    margin: 5px;
+  }
+
+  .electric_skateboards_pretitle {
+    font-size: 16px;
+  }
+
+  .electric_skateboards_subtitle {
+    margin: 5px 0px 5px;
+  }
+
+  .btn_skateboards {
+    max-width: 100px;
+  }
+
+  /* Boosted boards and revs */
+
+  .text_box {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .shop-boosted-board-and-revs {
+    flex-direction: column;
+  }
+
+  .boards-img-wrap {
+    margin: 20px auto 40px;
+  }
+
+  .boards-img-wrap {
+    background-image: url(images/boosted-boards.jpg);
+    background-repeat: no-repeat;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 100% 100%;
+  }
+  
+  .revs-img-wrap {
+    background-image: url(images/boosted-revs.jpg);
+    background-repeat: no-repeat;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 100% 100%;
+  }
+
+  .shop-boosted-board_title, .shop-boosted-revs_title {
+    margin-top: 130px;
+    font-size: 26px;
+  }
+
+  /*Boosted rev*/
+  
+  .boosted-rev-text_wrap {
+    padding: 0px 30px;
+  }
+
+  .boosted-revs_img {
+    margin: 5px 0px;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 100% 100%;
+  }  
+
+  .btn-boosted_rev {
+    font-size: 18px;
+    padding: 12px 12px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 120px;
+  }
+
+  /* Shop boosted images */
+  
+  .img-wrap-shop_first {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+  
+  .img-wrap-shop_second {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+  }
+  
+  .img-wrap-shop_third {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+  }
+  
+  /* Shop boosted videos*/
+
+  .box-videos {
+   margin-top: 15px;
+  }
+  
+  .video-boosted {
+    width: 270px;
+    height: auto;
+  }
+  
+  /* Footer */
+
+  .footer-content {
+    text-align: center;
+  }
+}
+
